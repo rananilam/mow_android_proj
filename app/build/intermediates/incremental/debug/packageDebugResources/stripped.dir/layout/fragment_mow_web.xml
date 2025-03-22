@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgRvColor" android:tag="layout/fragment_mow_web_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+<!--
+        android:descendantFocusability="blocksDescendants"
+-->
+
+
+
+        <FrameLayout
+            android:id="@+id/frameLayoutTitle"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="@color/dark_blue"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/BarlowRegular"
+                android:id="@+id/textViewBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:layout_marginStart="16dp"
+                android:drawablePadding="-10dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/ic_back"
+                android:textSize="@dimen/txt_size_50"
+                />
+        </FrameLayout>
+
+
+
+
+       <!-- <im.delight.android.webview.AdvancedWebView
+            android:id="@+id/webViewContent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayoutTitle" />-->
+        <im.delight.android.webview.AdvancedWebView
+            android:id="@+id/webViewContent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayoutTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

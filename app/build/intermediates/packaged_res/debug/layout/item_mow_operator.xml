@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                          
+                                                   
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp" android:tag="layout/item_mow_operator_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="@+id/linearLayoutAction"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewName"
+                style="@style/BarlowMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_40" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewEmail"
+                style="@style/BarlowMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/txt_size_30" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewContactNumber"
+                style="@style/BarlowMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/txt_size_30" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewEdit"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_mow_edit" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewSetting"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_mow_setting" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+         

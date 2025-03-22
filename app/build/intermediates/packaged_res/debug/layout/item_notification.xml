@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+                                                       
+                                                   
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:tag="layout/item_notification_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewTitle"
+            style="@style/BarlowRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:text="Hello"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_40" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewMessage"
+            style="@style/BarlowMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="Hello"
+            android:autoLink="web"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_40" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewDateAndTime"
+            style="@style/BarlowMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="Hello"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/txt_size_30" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGray" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+         

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                          
+                                                   
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:tag="layout/item_mow_file_name_card_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewFileName"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_mow_discover"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewFileName"
+                style="@style/BarlowMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_35"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewFileName"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewDelete"
+                app:layout_constraintStart_toEndOf="@+id/imageViewFileName"
+                app:layout_constraintTop_toTopOf="@+id/imageViewFileName"/>
+
+
+
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/ic_mow_delete"
+            android:layout_marginEnd="3dp"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewFileName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageViewFileName" />
+
+        <!-- Fake divider -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:background="@color/gray"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewDelete"
+            app:layout_constraintStart_toStartOf="@+id/imageViewFileName"
+            app:layout_constraintTop_toBottomOf="@id/imageViewFileName" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

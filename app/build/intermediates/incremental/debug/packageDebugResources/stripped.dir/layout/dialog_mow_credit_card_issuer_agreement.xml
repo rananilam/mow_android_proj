@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded_fill_white"
+        android:orientation="vertical" android:tag="layout/dialog_mow_credit_card_issuer_agreement_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:paddingTop="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+           android:src="@drawable/ic_mow_close" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/BarlowMedium"
+            android:textSize="@dimen/txt_size_60"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/textViewCreditCardAgreementLbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/credit_card_issuer_agreement" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/BarlowRegular"
+            android:textSize="@dimen/txt_size_35"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/textViewAgreement"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="8dp"
+            android:text="@string/credit_card_issuer_agreement_text"
+            android:scrollbars = "vertical"
+          />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+         

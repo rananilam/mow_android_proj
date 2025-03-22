@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/relativeRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:background="@color/bgRvColor"
+        >
+
+        <iCode.view.SquareImageView
+            android:id="@+id/imageViewProduct"
+            android:layout_width="match_parent"
+            android:src="@drawable/bg_mow_rounded_corner_rectangle_white"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/BarlowMedium"
+            android:textSize="@dimen/txt_size_40"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/textViewProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/BarlowBold"
+            android:textSize="@dimen/txt_size_25"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/textViewItemPriceDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>

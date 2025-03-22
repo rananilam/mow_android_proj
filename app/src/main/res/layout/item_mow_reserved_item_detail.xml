@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLblDetail"
+            style="@style/RobotoRegularN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Operator (Occupant) Details"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/txt_size_25"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLblFirstAndLastName"
+            style="@style/RobotoRegularN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name (First and Last Name):"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/txt_size_25"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLblDetail" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewFirstAndLastName"
+            style="@style/RobotoRegularN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Nikul Patel"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/txt_size_25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewLblFirstAndLastName"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLblDetail" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLblComplimentaryAccessory"
+            style="@style/RobotoRegularN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Complimentary Accessory:"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/txt_size_25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLblFirstAndLastName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewComplimentaryAccessory"
+            style="@style/RobotoRegularN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Nikul Patel"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/txt_size_25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewLblComplimentaryAccessory"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFirstAndLastName" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLblDestination"
+            style="@style/RobotoRegularN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Destination:"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/txt_size_25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLblComplimentaryAccessory" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewDestination"
+            style="@style/RobotoRegularN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Nikul Patel Destination"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/txt_size_25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewLblDestination"
+            app:layout_constraintTop_toBottomOf="@+id/textViewComplimentaryAccessory" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLblPickupLocation"
+            style="@style/RobotoRegularN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Pickup Location:"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/txt_size_25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLblDestination" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewPickupLocation"
+            style="@style/RobotoRegularN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Nikul Patel Location"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/txt_size_25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewLblPickupLocation"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDestination" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLblRentalPeriod"
+            style="@style/RobotoRegularN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Rental Period:"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/txt_size_25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLblPickupLocation" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewRentalPeriod"
+            style="@style/RobotoRegularN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Nikul Patel Rental Period"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/txt_size_25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewLblRentalPeriod"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPickupLocation" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLblArrivalDate"
+            style="@style/RobotoRegularN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Arrival Date:"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/txt_size_25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLblRentalPeriod" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewArrivalDate"
+            style="@style/RobotoRegularN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Nikul Patel Arrival Date"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/txt_size_25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewLblArrivalDate"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRentalPeriod" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLblArrivalTime"
+            style="@style/RobotoRegularN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Arrival Time:"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/txt_size_25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLblArrivalDate" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewArrivalTime"
+            style="@style/RobotoRegularN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Nikul Patel Arrival Time"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/txt_size_25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewLblArrivalTime"
+            app:layout_constraintTop_toBottomOf="@+id/textViewArrivalDate" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLblDepartureDate"
+            style="@style/RobotoRegularN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Departure Date:"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/txt_size_25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLblArrivalTime" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewDepartureDate"
+            style="@style/RobotoRegularN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Nikul Patel Departure Date"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/txt_size_25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewLblDepartureDate"
+            app:layout_constraintTop_toBottomOf="@+id/textViewArrivalTime" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLblDepartureTime"
+            style="@style/RobotoRegularN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Departure Time:"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/txt_size_25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLblDepartureDate" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewDepartureTime"
+            style="@style/RobotoRegularN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Nikul Patel Departure Time"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/txt_size_25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewLblDepartureTime"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDepartureDate" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

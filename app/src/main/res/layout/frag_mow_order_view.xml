@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:id="@+id/frameLayoutTitle"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="@color/dark_blue"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/BarlowRegular"
+                android:id="@+id/textViewBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:layout_marginStart="16dp"
+                android:drawablePadding="-10dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/ic_back"
+                android:textSize="@dimen/txt_size_50"
+                />
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView"
+            style="@style/BarlowMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:text="@string/order_details"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/txt_size_70"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayoutTitle" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleViewItems"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:foregroundGravity="top"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/textView29"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView"
+            tools:listitem="@layout/item_mow_reserved_item" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewIncludeText"
+            style="@style/BarlowRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_25"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewtotalAmount"
+            style="@style/BarlowBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_40"
+            app:layout_constraintBottom_toTopOf="@+id/textViewIncludeText"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView21"
+            style="@style/BarlowBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/total___"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_40"
+            app:layout_constraintBottom_toTopOf="@+id/textViewIncludeText"
+            app:layout_constraintEnd_toStartOf="@+id/textViewtotalAmount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewtotalAmount" />
+
+
+        <View
+            android:id="@+id/view10"
+            android:layout_width="0dp"
+            android:layout_height="0.1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="6dp"
+            android:background="@color/deviderColor1"
+            app:layout_constraintBottom_toTopOf="@+id/textView21"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </View>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewDeliveryFeeAmount"
+            style="@style/BarlowRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="6dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_35"
+            app:layout_constraintBottom_toTopOf="@+id/view10"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView24"
+            style="@style/BarlowRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="6dp"
+            android:text="@string/delivery_fee"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_35"
+            app:layout_constraintBottom_toTopOf="@+id/view10"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView29"
+            style="@style/BarlowMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/reservation_totals"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_50"
+            app:layout_constraintBottom_toTopOf="@+id/textViewLblPromo"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView26"
+            style="@style/BarlowRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="6dp"
+            android:text="@string/subtotal"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_35"
+            app:layout_constraintBottom_toTopOf="@+id/textView24"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewSubtotalAmount"
+            style="@style/BarlowRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="6dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_35"
+            app:layout_constraintBottom_toTopOf="@+id/textViewDeliveryFeeAmount"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLblPromo"
+            style="@style/BarlowRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="6dp"
+            android:text="@string/promo"
+            android:visibility="gone"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_35"
+            app:layout_constraintBottom_toTopOf="@+id/textView26"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewPromo"
+            style="@style/BarlowRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="6dp"
+            android:visibility="gone"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_35"
+            app:layout_constraintBottom_toTopOf="@+id/textViewSubtotalAmount"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

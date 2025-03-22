@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/frag_mow_phone_number_verification_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewSubmit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/BarlowExtraBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/phone_number_verification"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_100" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/RobotoRegularN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:gravity="center"
+                    android:text="@string/please_check_your_cell_phone_for_a_text_message_which_contains_a_4_digit_verification_code"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_40" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewEnterOtp"
+                    style="@style/BarlowMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_40" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextOTP1"
+                        style="@style/RobotoRegularN"
+                        android:layout_width="56dp"
+                        android:layout_height="72dp"
+                        android:background="@drawable/bg_mow_edittext_rounded_fill_gray"
+                        android:cursorVisible="false"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:paddingStart="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/textColorBlack"
+                        android:textSize="@dimen/txt_size_140" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextOTP2"
+                        style="@style/RobotoRegularN"
+                        android:layout_width="56dp"
+                        android:layout_height="72dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/bg_mow_edittext_rounded_fill_gray"
+                        android:cursorVisible="false"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:paddingStart="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/textColorBlack"
+                        android:textSize="@dimen/txt_size_140" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextOTP3"
+                        style="@style/RobotoRegularN"
+                        android:layout_width="56dp"
+                        android:layout_height="72dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/bg_mow_edittext_rounded_fill_gray"
+                        android:cursorVisible="false"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:paddingStart="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/textColorBlack"
+                        android:textSize="@dimen/txt_size_140" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextOTP4"
+                        style="@style/RobotoRegularN"
+                        android:layout_width="56dp"
+                        android:layout_height="72dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/bg_mow_edittext_rounded_fill_gray"
+                        android:cursorVisible="false"
+                        android:gravity="center"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:paddingStart="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/textColorBlack"
+                        android:textSize="@dimen/txt_size_140" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textviewnotReceiveCode"
+                    style="@style/RobotoRegularN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="@string/i_didnt_receive_a_code"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_40" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textviewResend"
+                    style="@style/RobotoRegularN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="@string/resend_code"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="@dimen/txt_size_40" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.core.widget.NestedScrollView>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewSubmit"
+            style="@style/BarlowMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_mow_rounded_blue_button"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="Submit Verification Code"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_50"
+            android:elevation="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

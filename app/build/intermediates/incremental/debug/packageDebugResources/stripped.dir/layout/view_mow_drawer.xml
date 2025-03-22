@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/RobotoMediumN"
+        android:textSize="@dimen/txt_size_80"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/textViewFirstChar"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:background="@drawable/bg_mow_profile_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/RobotoMediumN"
+        android:textSize="@dimen/txt_size_60"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/textViewName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewFirstChar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewFirstChar"
+        app:layout_constraintTop_toTopOf="@+id/textViewFirstChar" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/gray_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFirstChar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewMenuOptions"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSignOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        tools:listitem="@layout/item_mow_drawer" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewReportBug"
+        style="@style/RobotoMediumN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_mow_menu_report_bug"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="@string/menu_report_a_bug"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/txt_size_50"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSignOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewSignOut"
+        style="@style/RobotoMediumN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_mow_menu_logout"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="16dp"
+        android:text="@string/menu_sign_out"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/txt_size_50"
+        app:layout_constraintBottom_toTopOf="@+id/textViewVersionName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/RobotoLightN"
+        android:textSize="@dimen/txt_size_40"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/textViewVersionName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                          
+                                                   
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewMenu"
+        style="@style/RobotoMediumN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_left_menu_dashboard"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/txt_size_50"  android:tag="layout/item_mow_drawer_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"/>
+
+         

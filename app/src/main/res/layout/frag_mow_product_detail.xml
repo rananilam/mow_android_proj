@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutToolbar"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="@color/dark_blue"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/BarlowRegular"
+                android:id="@+id/textViewBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:layout_marginStart="16dp"
+                android:drawablePadding="-10dp"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/ic_back"
+                android:textSize="@dimen/txt_size_50"
+                />
+
+
+            <FrameLayout
+                android:id="@+id/frameLayoutDestination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_toStartOf="@+id/imageViewHome"
+                android:layout_toEndOf="@+id/textViewBack">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLocationName"
+                    style="@style/BarlowRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_drop_down_destination"
+                    android:drawablePadding="4dp"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:freezesText="true"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_60" />
+            </FrameLayout>
+
+
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="16dp"
+                android:src="@drawable/ic_home" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewTitle"
+            style="@style/BarlowSemiBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/product_details"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/txt_size_70"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayoutToolbar" />
+
+
+
+
+
+        <iCode.view.TolerantScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <iCode.view.RectangleImageView
+                    android:id="@+id/imageViewProduct"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/bgRvColor"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageViewProduct" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewName"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_50"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayoutCompat"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageViewProduct" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/linearLayoutCompat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageViewProduct">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textViewPrice"
+                        style="@style/BarlowBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/txt_size_40" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textViewDays"
+                        style="@style/BarlowBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/txt_size_25" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <im.delight.android.webview.AdvancedWebView
+                    android:id="@+id/webViewShortDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewName"
+                    />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblDescription"
+                    style="@style/BarlowMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_mow_rounded_blue_button"
+                    android:paddingStart="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/description"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_40"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/webViewShortDescription" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblRentalRates"
+                    style="@style/BarlowMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_mow_rounded_white_button"
+                    android:paddingStart="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/rental_rates"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_40"
+                    app:layout_constraintStart_toEndOf="@+id/textViewLblDescription"
+                    app:layout_constraintTop_toBottomOf="@+id/webViewShortDescription" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblPropertyDescription"
+                    style="@style/BarlowBold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="@string/product_description"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_50"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLblDescription" />
+
+
+                <im.delight.android.webview.AdvancedWebView
+                    android:id="@+id/webViewLongDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewAddToReservation"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLblPropertyDescription" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleViewItems"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:visibility="gone"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewAddToReservation"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLblPropertyDescription"
+                    tools:listitem="@layout/item_rental_rate" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewAddToReservation"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/bg_mow_rounded_blue_button"
+                    android:gravity="center"
+                    android:paddingStart="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/add_to_reservation"
+                    android:elevation="4dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/txt_size_50"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </iCode.view.TolerantScrollView>
+
+        <!---->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

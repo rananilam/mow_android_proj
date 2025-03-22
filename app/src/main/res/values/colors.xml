@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_color">#F2F8FB</color>
+    <color name="dark_blue">#015595</color>
+    <color name="light_blue">#C7DDEB</color>
+    <color name="gray_divider">#F1F2F3</color>
+
+
+    <color name="textColorBlack">#ff000000</color>
+
+
+    <color name="lineColorGray">#ffe6e6e6</color>
+
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#ED1C24</color>
+    <color name="colorGray">#878787</color>
+    <color name="colorGreen">#8CC63F</color>
+    <color name="colorGreen10">#80ACFF2E</color>
+    <color name="colorBlueText">#0071BC</color>
+    <color name="colorGraytext">#999999</color>
+    <color name="colorGraytext2">#666666</color>
+    <color name="colorGraytext3">#B3B3B3</color>
+
+    <color name="bgColor1">#EBF1F7</color>
+    <color name="bgColor2">#F2F2F2</color>
+    <color name="bgRvColor">#F5F8FA</color>
+    <color name="deviderColor">#CCDDEA</color>
+    <color name="deviderColor1">#707070</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#878787</color>
+
+
+</resources>

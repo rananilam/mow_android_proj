@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rootConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/frag_mow_add_occupant_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutToolbar"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="@color/dark_blue"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewBack"
+                style="@style/BarlowRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:drawableStart="@drawable/ic_back"
+                android:drawablePadding="-10dp"
+                android:gravity="center_vertical"
+                android:text="@string/back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_50" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="16dp"
+                android:src="@drawable/ic_home" />
+
+        </FrameLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/rootNestedScrollView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewSubmit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayoutToolbar">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblAddOccupant"
+                    style="@style/BarlowExtraBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableEnd="@drawable/ic_mow_info"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:padding="16dp"
+                    android:text="@string/add_occupant_for_operator"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_100" />
+
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkBoxIfSame"
+                    style="@style/BarlowMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:button="@drawable/mow_ckeckbox_selector"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/if_operator_and_occupant_are_same"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_40" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewNote"
+                    style="@style/BarlowMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/note_this_will_override_your_existing_default_occupant"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/txt_size_40" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:hintTextColor="@color/colorGray">
+
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextFirstName"
+                        style="@style/BarlowMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters"
+                        android:maxLines="1"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt_size_40" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:hintTextColor="@color/colorGray">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextMiddleName"
+                        style="@style/BarlowMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_middle_name"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt_size_40" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:hintTextColor="@color/colorGray">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextLastName"
+                        style="@style/BarlowMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters"
+                        android:maxLines="1"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt_size_40" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:hintTextColor="@color/colorGray">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextWeight"
+                        style="@style/BarlowMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt_size_40" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutSelectHeightFt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:hintTextColor="@color/colorGray">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextSelectHeightFt"
+                        style="@style/BarlowMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_mow_down_arrow"
+                        android:focusable="false"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt_size_40" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutSelectHeightIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:hintTextColor="@color/colorGray">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextSelectHeightIn"
+                        style="@style/BarlowMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_mow_down_arrow"
+                        android:focusable="false"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt_size_40" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.core.widget.NestedScrollView>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewSubmit"
+            style="@style/BarlowMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_mow_rounded_blue_button"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_50"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

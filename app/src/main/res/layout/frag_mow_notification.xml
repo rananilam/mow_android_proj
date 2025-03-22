@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/dark_blue"
+            android:elevation="4dp">
+
+
+            <FrameLayout
+                android:id="@+id/frameLayoutHandler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewBack"
+                    style="@style/BarlowRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:drawableStart="@drawable/ic_back"
+                    android:drawablePadding="-10dp"
+                    android:gravity="center_vertical"
+                    android:text="Back"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_50"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageViewMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_mow_drawer" />
+
+            </FrameLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/BarlowRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/frameLayoutCart"
+                android:layout_toEndOf="@+id/frameLayoutHandler"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/notifications"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_60" />
+
+
+            <FrameLayout
+                android:id="@+id/frameLayoutCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_cart" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewNumberOfItems"
+                    style="@style/BarlowSemiBold"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/ic_circle_badge"
+                    android:gravity="center"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="@dimen/txt_size_20" />
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleViewItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_notification" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLblNoNotifications"
+            style="@style/BarlowMedium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/you_have_no_current_notifications"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_50"
+            android:visibility="gone" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</layout>

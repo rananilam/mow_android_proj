@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewMenu"
+            style="@style/RobotoMediumN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/txt_size_50" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleViewSubMenuOptions"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/item_left_sub_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>

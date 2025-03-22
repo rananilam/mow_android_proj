@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                          
+                                                   
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:tag="layout/item_mow_credit_debit_card_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+
+        <View
+            android:id="@+id/viewBorder"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:background="@drawable/bg_mow_gray_rounded"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/radioButtonIsSelected"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <RadioButton
+            android:id="@+id/radioButtonIsSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewCardType"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageViewCardType" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewCardType"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_mow_discover"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radioButtonIsSelected"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutCompat2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewCardType"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewDelete"
+            app:layout_constraintStart_toEndOf="@+id/imageViewCardType"
+            app:layout_constraintTop_toTopOf="@+id/imageViewCardType">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewCardName"
+                style="@style/BarlowMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_50" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewCardNumber"
+                style="@style/BarlowMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_35" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_mow_delete"
+            android:layout_marginEnd="3dp"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewCardType"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageViewCardType" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

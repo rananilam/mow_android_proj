@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkBoxPickLocation"
+            style="@style/BarlowRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/mow_ckeckbox_selector_circle"
+            android:paddingStart="8dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingEnd="24dp"
+            android:textColor="@color/colorBlack"
+            android:layout_gravity="start|center_vertical"
+            android:textSize="@dimen/txt_size_40" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:padding="4dp"
+            android:src="@drawable/ic_mow_info"/>
+    </FrameLayout>
+</layout>

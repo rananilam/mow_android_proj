@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rootConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/frag_mow_billing_address_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutToolbar"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="@color/dark_blue"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewBack"
+                style="@style/BarlowRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableStart="@drawable/ic_back"
+                android:drawablePadding="-10dp"
+                android:gravity="center_vertical"
+                android:text="Back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_50" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/BarlowRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textViewBack"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/billing_address__"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_60" />
+
+        </RelativeLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/rootNestedScrollView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayoutToolbar">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:hintTextColor="@color/colorGray">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextFirstName"
+                        style="@style/BarlowMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="true"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters"
+                        android:maxLines="1"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorGray"
+                        android:textColorHint="@color/colorGray"
+                        android:textSize="@dimen/txt_size_40" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:hintTextColor="@color/colorGray">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextMiddleName"
+                        style="@style/BarlowMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:hint="@string/hint_middle_name"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorGray"
+                        android:textColorHint="@color/colorGray"
+                        android:textSize="@dimen/txt_size_40" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:hintTextColor="@color/colorGray">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextLastName"
+                        style="@style/BarlowMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters"
+                        android:maxLines="1"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorGray"
+                        android:textColorHint="@color/colorGray"
+                        android:textSize="@dimen/txt_size_40" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutSelectCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:hintTextColor="@color/colorGray">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextSelectCountry"
+                        style="@style/BarlowMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_mow_down_arrow"
+                        android:focusable="false"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorGray"
+                        android:textSize="@dimen/txt_size_40" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:visibility="gone"
+                    app:hintTextColor="@color/colorGray">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextCountry"
+                        style="@style/BarlowMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters"
+                        android:maxLines="1"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorGray"
+                        android:textSize="@dimen/txt_size_40" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutStreetAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:hintTextColor="@color/colorGray">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextStreetAddress"
+                        style="@style/BarlowMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters"
+                        android:maxLines="1"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorGray"
+                        android:textSize="@dimen/txt_size_40" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:hintTextColor="@color/colorGray">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextApartment"
+                        style="@style/BarlowMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_apartment_suite_unit_etc"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters"
+                        android:maxLines="1"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorGray"
+                        android:textSize="@dimen/txt_size_40" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutTownCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:hintTextColor="@color/colorGray">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextTownCity"
+                        style="@style/BarlowMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters"
+                        android:maxLines="1"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorGray"
+                        android:textSize="@dimen/txt_size_40" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:hintTextColor="@color/colorGray">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextState"
+                        style="@style/BarlowMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_mow_down_arrow"
+                        android:focusable="false"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorGray"
+                        android:textSize="@dimen/txt_size_40" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutOtherState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:visibility="gone"
+                    app:hintTextColor="@color/colorGray">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextOtherState"
+                        style="@style/BarlowMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters"
+                        android:maxLines="1"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorGray"
+                        android:textSize="@dimen/txt_size_40" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutZip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:hintTextColor="@color/colorGray">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextZip"
+                        style="@style/BarlowMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorGray"
+                        android:textSize="@dimen/txt_size_40" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewSaveChanges"
+                    style="@style/BarlowMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/bg_mow_rounded_blue_button"
+                    android:elevation="4dp"
+                    android:gravity="center"
+                    android:paddingStart="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/save_changes"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/txt_size_50" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+         

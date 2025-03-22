@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_button_rounded_stroke_blue" android:tag="layout/item_mow_active_order_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewTimeRemaining"
+            style="@style/BarlowBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:text="Hello"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_100"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView12"
+            style="@style/BarlowRegular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/time_remaining"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView13"
+            style="@style/BarlowRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/battery_level"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView14"
+            style="@style/BarlowMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_25"
+            android:text="65%"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewProduct"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_mow_image1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTimeRemaining" />
+
+
+        <View
+            android:id="@+id/sepView"
+            android:layout_width="0dp"
+            android:layout_height="0.05dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewProduct"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProduct"
+            app:layout_constraintTop_toTopOf="@+id/imageViewProduct" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewName"
+            style="@style/BarlowRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_20"
+            android:text="STANDARD SCOOTER"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProduct"
+            app:layout_constraintTop_toBottomOf="@+id/sepView"
+             />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewDate"
+            style="@style/BarlowRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:gravity="start"
+            android:text="12/12/2022 - 12/12/2023"
+            android:textColor="@color/colorGraytext"
+            android:textSize="@dimen/txt_size_35"
+            app:layout_constraintBottom_toTopOf="@+id/sepView"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProduct"
+
+             />
+
+
+        <!-- <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewProduct"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageViewProduct">
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewPrice"
+            style="@style/BarlowBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_35"
+            android:text="$100.00"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewProduct"
+            app:layout_constraintEnd_toStartOf="@+id/textViewDays"
+            app:layout_constraintTop_toTopOf="@+id/imageViewProduct"
+            app:layout_constraintVertical_bias="0.589" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewDays"
+            style="@style/BarlowBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_25"
+            android:text="/*3 Days"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewPrice"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewOrderNo"
+            style="@style/BarlowRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_30"
+            android:text="Order Number: A74047"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewProduct" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView19"
+            style="@style/BarlowRegular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:drawableEnd="@drawable/ic_mow_info"
+            android:drawablePadding="8dp"
+            android:gravity="end"
+            android:text="Equipment ID:8634987"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_30"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewOrderNo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewOrderNo"
+            app:layout_constraintTop_toTopOf="@+id/textViewOrderNo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLocation"
+            style="@style/BarlowRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_30"
+            android:text="Bally's AC"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOrderNo" />
+
+        <!--<ImageView
+            android:id="@+id/imageViewQuetionMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView19"
+            app:layout_constraintStart_toEndOf="@+id/textView19"
+            app:layout_constraintTop_toTopOf="@+id/textView19"
+            app:layout_constraintVertical_bias="1.0"
+            android:src="@drawable/ic_mow_info"
+            app:srcCompat="@drawable/ic_mow_info" />-->
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewExtendMyRental"
+            style="@style/BarlowMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_mow_one_side_rounded_green"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/extend_my_rental"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/txt_size_50"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLocation" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewReturnMyRental"
+            style="@style/BarlowMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="1dp"
+            android:background="@drawable/bg_mow_one_side_rounded_blue"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/return_my_rental"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/txt_size_50"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLocation" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

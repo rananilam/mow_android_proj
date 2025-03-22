@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rootConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutToolbar"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="@color/dark_blue"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewBack"
+                style="@style/BarlowRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:drawableStart="@drawable/ic_back"
+                android:drawablePadding="-10dp"
+                android:gravity="center_vertical"
+                android:text="@string/back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_50" />
+
+
+            <FrameLayout
+                android:id="@+id/frameLayoutDestination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_toStartOf="@+id/imageViewHome"
+                android:layout_toEndOf="@+id/textViewBack">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLocationName"
+                    style="@style/BarlowRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_drop_down_destination"
+                    android:drawablePadding="4dp"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:freezesText="true"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_60" />
+            </FrameLayout>
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="16dp"
+                android:src="@drawable/ic_home" />
+
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewTitle"
+            style="@style/BarlowSemiBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/reservation_details"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/txt_size_70"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayoutToolbar" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/rootNestedScrollView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewName"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_50"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <im.delight.android.webview.AdvancedWebView
+                    android:id="@+id/textViewShortDescription"
+                    style="@style/BarlowRegular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblOperator"
+                    style="@style/BarlowMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_mow_info"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/operator"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_50"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewShortDescription" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblOperatorNote"
+                    style="@style/BarlowRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/note_for_this_device_the_operator_may_be_a_different_individual_than_the_occupant"
+                    android:textColor="@color/colorGraytext2"
+                    android:textSize="@dimen/txt_size_40"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLblOperator" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutSelectOperatorOccupant"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:hintTextColor="@color/colorGray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLblOperatorNote">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextSelectOperatorOccupant"
+                        style="@style/BarlowMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawableEnd="@drawable/ic_mow_down_arrow"
+                        android:focusable="false"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt_size_40" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblNewOperator"
+                    style="@style/RobotoRegularN"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_operator"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="@dimen/txt_size_25"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayoutSelectOperatorOccupant" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblOccupant"
+                    style="@style/BarlowMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableEnd="@drawable/ic_mow_info"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/occupant"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_50"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLblNewOperator" />
+
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkBoxOperatorOccupantSame"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/if_operator_and_occupant_are_the_same_individual"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_40"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLblOccupant" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutSelectOccupant"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:hintTextColor="@color/colorGray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/checkBoxOperatorOccupantSame">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextSelectOccupant"
+                        style="@style/BarlowMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_mow_down_arrow"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:text="@string/select_occupant"
+                        android:textColor="@color/black"
+                        android:focusable="false"
+                        android:textSize="@dimen/txt_size_40" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblNewOccupant"
+                    style="@style/RobotoRegularN"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/new_occupant"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="@dimen/txt_size_25"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayoutSelectOccupant" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblPickupLocation"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/pickup_location_"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_50"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLblNewOccupant" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleViewCustomerPickupLocation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLblPickupLocation"
+                    tools:listitem="@layout/item_mow_pick_up_location" />
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/linearLayoutOtherPickupLocation"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/recycleViewCustomerPickupLocation">
+
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/checkBoxIsSameBillingAddress"
+                        style="@style/BarlowMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/check_here_if_delivery_address_is_the_same_as_billing_address"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt_size_40" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayoutStreetAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        app:hintTextColor="@color/colorGray">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/editTextStreetAddress"
+                            style="@style/BarlowMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionDone"
+                            android:inputType="textCapCharacters"
+                            android:maxLines="1"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp"
+                            android:singleLine="true"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/txt_size_40" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        app:hintTextColor="@color/colorGray">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/editTextApartment"
+                            style="@style/BarlowMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_apartment_suite_unit_building_floor_etc"
+                            android:imeOptions="actionDone"
+                            android:inputType="textCapCharacters"
+                            android:maxLines="1"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp"
+                            android:singleLine="true"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/txt_size_40" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayoutCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        app:hintTextColor="@color/colorGray">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/editTextCity"
+                            style="@style/BarlowMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionDone"
+                            android:inputType="textCapCharacters"
+                            android:maxLines="1"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp"
+                            android:singleLine="true"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/txt_size_40" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        app:hintTextColor="@color/colorGray">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/editTextState"
+                            style="@style/BarlowMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/ic_mow_down_arrow"
+                            android:focusable="false"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/txt_size_40" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayoutZip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        app:hintTextColor="@color/colorGray">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/editTextZip"
+                            style="@style/BarlowMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp"
+                            android:singleLine="true"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/txt_size_40" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="@string/hint_contact_persons_phone_number_delivery_instructions"
+                        app:hintTextColor="@color/colorGray">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/editTextContactPerson"
+                            style="@style/BarlowMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textCapCharacters"
+                            android:maxLines="2"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/txt_size_40" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblAccessoryType"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/hint_accessory_type"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_50"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayoutOtherPickupLocation" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutSelectAccessoryType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:hintTextColor="@color/colorGray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLblAccessoryType">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editTextSelectAccessoryType"
+                        style="@style/BarlowMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_mow_down_arrow"
+                        android:focusable="false"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:text="@string/select_accessory_type"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt_size_40" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblChairPadRequirement"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/chair_pad_requirement__"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_50"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayoutSelectAccessoryType" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleViewChairPadRequirement"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLblChairPadRequirement"
+                    tools:listitem="@layout/item_device_property" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblHandController"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/hand_controller_"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_50"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/recycleViewChairPadRequirement" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleViewHandController"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLblHandController"
+                    tools:listitem="@layout/item_device_property" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblJoystickPosition"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/joystick_position_"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_50"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/recycleViewHandController" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleViewJoystickPosition"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLblJoystickPosition"
+                    tools:listitem="@layout/item_device_property" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblPreferredWheelchairSize"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/preferred_wheelchair_size"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_50"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/recycleViewJoystickPosition" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleViewPreferredWheelchairSize"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLblPreferredWheelchairSize"
+                    tools:listitem="@layout/item_device_property" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblArrivalDate"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/arrival_date_"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_50"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewLblArrivalTime"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/recycleViewPreferredWheelchairSize" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblArrivalTime"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/arrival_time_"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_50"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textViewLblArrivalDate"
+                    app:layout_constraintTop_toBottomOf="@+id/recycleViewPreferredWheelchairSize" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewArrivalDate"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bottom_line"
+                    android:drawableEnd="@drawable/ic_mow_calendar"
+                    android:hint="@string/hint_date_format"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    android:textSize="@dimen/txt_size_40"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewArrivalTime"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLblArrivalDate" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewArrivalTime"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bottom_line"
+                    android:drawableEnd="@drawable/ic_mow_watch"
+                    android:hint="@string/hint_time_format"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    android:textSize="@dimen/txt_size_40"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textViewArrivalDate"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLblArrivalTime" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblDepartureDate"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/departure_date_"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_50"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewLblDepartureTime"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewArrivalTime" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblDepartureTime"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/departure_time_"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_50"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textViewLblDepartureDate"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewArrivalTime" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewDepartureDate"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bottom_line"
+                    android:drawableEnd="@drawable/ic_mow_calendar"
+                    android:hint="@string/hint_date_format"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    android:textSize="@dimen/txt_size_40"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewDepartureTime"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLblDepartureDate" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewDepartureTime"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bottom_line"
+                    android:drawableEnd="@drawable/ic_mow_watch"
+                    android:hint="@string/hint_time_format"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    android:textSize="@dimen/txt_size_40"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textViewDepartureDate"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLblDepartureTime" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewErrorOfBillingProfile"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/txt_size_40"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewLblRiderRewardsPointsEarned"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDepartureTime" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblRentalPeriod"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/rental_period_"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_40"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewLblRiderRewardsPointsEarned"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewErrorOfBillingProfile" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblRiderRewardsPointsEarned"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/rider_rewards_points_earned"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_40"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textViewLblRentalPeriod"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewErrorOfBillingProfile" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewRentalPeriod"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bottom_line"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/txt_size_40"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewRiderRewardsPointsEarned"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLblRentalPeriod" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewRiderRewardsPointsEarned"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bottom_line"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/txt_size_40"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textViewRentalPeriod"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLblRiderRewardsPointsEarned" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblPrice"
+                    style="@style/BarlowMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/price__"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_50"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewRentalPeriod" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewPrice"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="end"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_60"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textViewLblPrice"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewRiderRewardsPointsEarned" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLblRiderRewardsPolicy"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/rider_rewards_policy"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="@dimen/txt_size_50"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLblPrice" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewSaveAndAddAdditional"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_mow_rounded_blue_button"
+                    android:elevation="4dp"
+                    android:gravity="center"
+                    android:paddingStart="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/save_add_an_additional_order"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_50"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLblRiderRewardsPolicy" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewSaveAndContinue"
+                    style="@style/BarlowMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_mow_rounded_blue_button"
+                    android:elevation="4dp"
+                    android:gravity="center"
+                    android:paddingStart="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/save_this_order_continue"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_50"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSaveAndAddAdditional" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rootConstraintLayout"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/viewToolbarBackground"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_blue"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutToolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                >
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageViewMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_mow_drawer" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/BarlowRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/frameLayoutCart"
+                    android:layout_toEndOf="@+id/imageViewMenu"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="@string/order_history"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_60" />
+
+
+                <FrameLayout
+                    android:id="@+id/frameLayoutCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/frameLayoutNotification">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:src="@drawable/ic_cart" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textViewNumberOfItems"
+                        style="@style/BarlowSemiBold"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/ic_circle_badge"
+                        android:gravity="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="@dimen/txt_size_20" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayoutNotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingEnd="16dp"
+                        android:paddingStart="0dp"
+                        android:src="@drawable/ic_mow_notification" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textViewNumberOfNotifications"
+                        style="@style/BarlowSemiBold"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:visibility="gone"
+                        android:background="@drawable/ic_circle_badge"
+                        android:gravity="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="@dimen/txt_size_20" />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editTextSearch"
+                style="@style/BarlowRegular"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_mow_rounded_corner_rectangle_white"
+                android:drawableEnd="@drawable/ic_mow_search"
+                android:hint="@string/search"
+                android:maxLines="1"
+                android:padding="12dp"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:textColor="@color/colorGraytext2"
+                android:textSize="@dimen/txt_size_45" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewRiderRewardPoints"
+            style="@style/BarlowMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_mow_info"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="@string/rider_rewards_points"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_50"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewToolbarBackground" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewOrderHistory"
+            style="@style/BarlowSemiBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="@string/order_history"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/txt_size_70"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRiderRewardPoints" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewSortOrder"
+            style="@style/BarlowRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_mow_down_arrow"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="@string/sort_order"
+            android:textColor="@color/colorGraytext"
+            android:textSize="@dimen/txt_size_40"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewOrderHistory"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewOrderHistory" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleViewItems"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOrderHistory"
+            tools:listitem="@layout/item_mow_order_history" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

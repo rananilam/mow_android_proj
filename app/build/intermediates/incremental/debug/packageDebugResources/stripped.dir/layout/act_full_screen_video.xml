@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+<!--    <com.google.android.exoplayer2.ui.PlayerView-->
+<!--        android:id="@+id/exoplayerView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:controller_layout_id="@layout/custom_playback_control_minimal"-->
+<!--        app:fastforward_increment="@integer/exoplayer_playback_fastforward_increment_ms"-->
+<!--        app:rewind_increment="@integer/exoplayer_playback_rewind_increment_ms"-->
+<!--        app:show_timeout="@integer/exoplayer_show_control_timeout_ms"-->
+<!--        app:resize_mode="fill"-->
+<!--        app:use_artwork="true" />-->
+
+
+
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/exoplayerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:controller_layout_id="@layout/custom_playback_control_minimal"
+        app:resize_mode="fill"
+        app:show_timeout="5000"
+        app:use_artwork="true"  android:tag="layout/act_full_screen_video_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+
+         

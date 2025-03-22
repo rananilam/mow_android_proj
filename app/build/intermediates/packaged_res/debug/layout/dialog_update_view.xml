@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:elevation="2dp"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/BarlowMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:text="@string/alert_update_required"
+            android:textColor="#333333" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/BarlowMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="17sp"
+            android:text="@string/alert_a_new_version_of_the_application_is_available_and_is_required_to_continue"
+            android:textColor="#333333"
+            android:textAlignment="center" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/BarlowMedium"
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:padding="2dp"
+            android:background="@android:color/transparent"
+            android:textColor="#03A9F4"
+            android:text="@string/update" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>

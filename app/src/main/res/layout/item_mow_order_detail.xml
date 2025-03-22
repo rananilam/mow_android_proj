@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="16dp"
+            android:weightSum="10">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewName"
+                style="@style/BarlowMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.5"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_40" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewRentalPeriod1"
+                style="@style/BarlowMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_40" />
+
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewTotal"
+                style="@style/BarlowMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="end"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_40" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewExpandCollapse"
+                android:layout_width="18dp"
+                android:layout_marginStart="2dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_down_arrow"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="36dp"
+            android:weightSum="10">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewLblChairPadPrice"
+                style="@style/BarlowMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_40"
+                app:layout_constraintEnd_toStartOf="@+id/textViewChairPadPrice"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewChairPadPrice"
+                style="@style/BarlowMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="end"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_40"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTotal" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/expandableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="8dp"
+            >
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/BarlowMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/operator_details"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_50" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewJoystickPosition"
+                style="@style/BarlowRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/joystick_position__"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_35" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewHandController"
+                style="@style/BarlowRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/hand_controller__"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_35" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewWheelchairSize"
+                style="@style/BarlowRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/wheelchair_size_"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_35" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewOperatorName"
+                style="@style/BarlowRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/operator_name__"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_35" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewOccupantName"
+                style="@style/BarlowRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/occupant_name__"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_35" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewComplimentary"
+                style="@style/BarlowRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/complimentary_accessory_"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_35" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewDestination"
+                style="@style/BarlowRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/destination_"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_35" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewPickupLocation"
+                style="@style/BarlowRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/pickup_location__"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_35" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewOtherPickupLocation"
+                style="@style/BarlowRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_35"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewRentalPeriod"
+                style="@style/BarlowRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/rental_period__"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_35" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewArrivalDate"
+                style="@style/BarlowRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/arrival_date__"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_35" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewArrivalTime"
+                style="@style/BarlowRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/arrival_time__"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_35" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewDepartureDate"
+                style="@style/BarlowRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/departure_date__"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_35" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewDepartureTime"
+                style="@style/BarlowRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/departure_time__"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_35" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--<androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>-->
+</layout>

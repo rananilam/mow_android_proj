@@ -1,0 +1,166 @@
+<resources>
+
+
+    <!--  No ActionBar theme -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="MOWTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+<!--                    <style name="MOWTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+
+        <item name="colorPrimary">@color/dark_blue</item>
+        <item name="colorPrimaryDark">@color/dark_blue</item>
+        <item name="colorAccent">@color/dark_blue</item>
+        <item name="android:navigationBarColor">@color/dark_blue</item>
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:timePickerStyle">@style/MyTimePickerDark</item>
+        <item name="textInputStyle">@style/BarlowMedium</item>
+        <item name="snackbarStyle">@style/FullWidthSnackbar</item>
+
+    </style>
+    <style name="FullWidthSnackbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:paddingLeft">5dp</item> <!-- Add left padding -->
+    </style>
+
+
+
+    <style name="Calendertheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/dark_blue</item>
+        <item name="colorPrimaryDark">@color/dark_blue</item>
+        <item name="colorAccent">@color/dark_blue</item>
+        <item name="android:navigationBarColor">@color/dark_blue</item>
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:timePickerStyle">@style/MyTimePickerDark</item>
+    </style>
+
+
+    <!--  Splash screen theme -->
+
+    <style name="SplashNoActionBarTheme" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:navigationBarColor">@color/white</item>
+
+    </style>
+
+
+    <style name="LoginTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/dark_blue</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+        <item name="colorAccent">@color/dark_blue</item>
+        <item name="android:navigationBarColor">@color/colorBlack</item>
+        <item name="android:windowBackground">@drawable/bg_login_screen</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+
+    <style name="IncidentCommentDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="android:windowFullscreen">true</item>
+        <!--Theme_Black_NoTitleBar_Fullscreen-->
+
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="AppDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <!-- <item name="android:windowBackground">@drawable/bg_croner_rounded</item>-->
+
+    </style>
+
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/dark_blue</item>
+        <item name="colorPrimaryDark">@color/dark_blue</item>
+        <item name="colorAccent">@color/dark_blue</item>
+        <item name="android:windowBackground">@color/dark_blue</item>
+        <item name="android:navigationBarColor">@color/dark_blue</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/rounded_corner</item>
+    </style>
+
+
+    <style name="ProgressDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <!-- This is important! Don't forget to set window background -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+    </style>
+
+
+    <style name="RobotoRegularN" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="RobotoMediumN" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="RobotoLightN" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_light</item>
+    </style>
+
+
+<!--    <style name="BarlowMedium" parent="Widget.AppCompat.TextView">-->
+    <style name="BarlowMedium" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fontFamily">@font/barlow_medium</item>
+        <item name="android:textColorHint">@color/colorGray</item>
+        <item name="hintTextAppearance">@style/CustomHintText</item>
+    </style>
+
+    <style name="CustomHintText" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="BarlowBold" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/barlow_bold</item>
+    </style>
+
+    <style name="BarlowExtraBold" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/barlow_extrabold</item>
+    </style>
+
+    <style name="BarlowRegular" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/barlow_regular</item>
+    </style>
+
+    <style name="BarlowSemiBold" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/barlow_semibold</item>
+    </style>
+
+    <style name="BarlowLight" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/barlow_light</item>
+    </style>
+
+
+    <style name="MyTimePickerDark" parent="android:Widget.Material.TimePicker">
+        <item name="android:timePickerMode">spinner</item>
+    </style>
+
+
+
+
+</resources>

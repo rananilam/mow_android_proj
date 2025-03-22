@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rootConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/frag_mow_order_status_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutToolbar"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="@color/dark_blue"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewBack"
+                style="@style/BarlowRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:drawableStart="@drawable/ic_back"
+                android:drawablePadding="-10dp"
+                android:gravity="center_vertical"
+                android:text="@string/back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_50" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="16dp"
+                android:src="@drawable/ic_home" />
+
+
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayoutToolbar">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewOrderStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mow_success" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewMessage"
+                style="@style/BarlowSemiBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:maxLines="10"
+                android:text="@string/thank_you"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_55" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewLblOrderReceived"
+                style="@style/BarlowRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/your_order_has_been_received"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_40" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewOrderNumber"
+                style="@style/BarlowSemiBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txt_size_40" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewDate"
+                style="@style/BarlowRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/txt_size_35" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linearLayoutPaymentAndMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewTotal"
+                    style="@style/BarlowSemiBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_40" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewPaymentMethod"
+                    style="@style/BarlowSemiBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txt_size_40" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewViewOrder"
+                style="@style/BarlowMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_mow_rounded_blue_button"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:text="@string/return_to_view_order"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_40" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+         

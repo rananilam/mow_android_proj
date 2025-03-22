@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="#CC000000"
+    android:padding="8dp"
+    android:layoutDirection="ltr" android:tag="layout/custom_playback_control_minimal_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+   <!-- <ImageButton
+        android:id="@id/exo_play"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        style="@style/ExoMediaButton.Play"/>-->
+
+
+<!--    <ImageView-->
+<!--        android:id="@id/exo_pause"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        style="@style/ExoStyledControls.Button.Center.PlayPause"-->
+<!--         />-->
+
+  <ImageView
+      android:id="@+id/exo_pause"
+      android:layout_width="24dp"
+      android:layout_height="24dp"
+      android:adjustViewBounds="true"
+      app:srcCompat="@drawable/media3_icon_play"
+      />
+
+    <TextView
+        android:id="@id/exo_position"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_toEndOf="@id/exo_pause"
+        android:includeFontPadding="false"
+        android:paddingLeft="16dp"
+        android:paddingRight="4dp"
+        android:gravity="center_vertical"
+        android:textColor="#FFBEBEBE"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textViewSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_toEndOf="@id/exo_position"
+        android:includeFontPadding="false"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="/"
+        android:gravity="center_vertical"
+        android:textColor="#FFBEBEBE"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@id/exo_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:gravity="center_vertical"
+        android:layout_toEndOf="@+id/textViewSplash"
+        android:includeFontPadding="false"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:textColor="#FFBEBEBE"
+        android:textSize="14sp" />
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/exo_fullscreen_icon"-->
+<!--        android:layout_width="24dp"-->
+<!--        android:layout_height="24dp"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        app:srcCompat="@drawable/exo_controls_fullscreen_enter" />-->
+
+    <ImageView
+        android:id="@+id/exo_fullscreen_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/ic_fullscreen"
+        />
+       <!-- app:srcCompat="@drawable/exo_controls_fullscreen_enter"-->
+
+
+    <androidx.media3.ui.DefaultTimeBar
+        android:id="@id/exo_progress"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:contentDescription="Media progress bar, swipe left or right to adjust"
+        android:layout_below="@+id/exo_fullscreen_icon" />
+
+<!--    <com.google.android.exoplayer2.ui.DefaultTimeBar-->
+<!--        android:id="@id/exo_progress"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="26dp"-->
+<!--        android:layout_below="@+id/exo_fullscreen_icon" />-->
+
+</RelativeLayout>
+         

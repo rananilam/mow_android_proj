@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="card_type_options">
+        <item>Visa</item>
+        <item>American Express</item>
+        <item>MasterCard</item>
+        <item>Discover</item>
+    </string-array>
+    <string-array name="country_options">
+        <item>USA</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="country_options_with_one_country">
+        <item>USA</item>
+        <item>Other</item>
+
+    </string-array>
+    <string-array name="height_ft">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="height_in">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+    <string-array name="month_options">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+    <string-array name="sort_by_options">
+        <item>Order number</item>
+        <item>Arrival date</item>
+        <item>Destination</item>
+    </string-array>
+    <color name="background_color">#F2F8FB</color>
+    <color name="bgColor1">#EBF1F7</color>
+    <color name="bgColor2">#F2F2F2</color>
+    <color name="bgRvColor">#F5F8FA</color>
+    <color name="black">#000000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlueText">#0071BC</color>
+    <color name="colorGray">#878787</color>
+    <color name="colorGraytext">#999999</color>
+    <color name="colorGraytext2">#666666</color>
+    <color name="colorGraytext3">#B3B3B3</color>
+    <color name="colorGreen">#8CC63F</color>
+    <color name="colorGreen10">#80ACFF2E</color>
+    <color name="colorRed">#ED1C24</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="dark_blue">#015595</color>
+    <color name="deviderColor">#CCDDEA</color>
+    <color name="deviderColor1">#707070</color>
+    <color name="gray">#878787</color>
+    <color name="gray_divider">#F1F2F3</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="light_blue">#C7DDEB</color>
+    <color name="lineColorGray">#ffe6e6e6</color>
+    <color name="textColorBlack">#ff000000</color>
+    <color name="white">#FFFFFF</color>
+    <dimen name="txt_size_10">4sp</dimen>
+    <dimen name="txt_size_100">30sp</dimen>
+    <dimen name="txt_size_140">42sp</dimen>
+    <dimen name="txt_size_15">6sp</dimen>
+    <dimen name="txt_size_160">48sp</dimen>
+    <dimen name="txt_size_20">8sp</dimen>
+    <dimen name="txt_size_25">10sp</dimen>
+    <dimen name="txt_size_30">11sp</dimen>
+    <dimen name="txt_size_35">11.5sp</dimen>
+    <dimen name="txt_size_40">12sp</dimen>
+    <dimen name="txt_size_45">13.5sp</dimen>
+    <dimen name="txt_size_50">15sp</dimen>
+    <dimen name="txt_size_55">16.5sp</dimen>
+    <dimen name="txt_size_60">18sp</dimen>
+    <dimen name="txt_size_70">24sp</dimen>
+    <dimen name="txt_size_75">25sp</dimen>
+    <dimen name="txt_size_80">24sp</dimen>
+    <dimen name="txt_size_90">27sp</dimen>
+    <integer name="exoplayer_playback_fastforward_increment_ms">10000</integer>
+    <integer name="exoplayer_playback_rewind_increment_ms">10000</integer>
+    <integer name="exoplayer_show_control_timeout_ms">5000</integer>
+    <string name="account_number"><![CDATA[<font color=#878787>Account Number</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="activate_your_camera_and_snap_a_photo_of_your_device">Activate your camera and snap a photo of your device including the background of the designated return location. The photo submission will assist MOBILITY ON WHEELS in recovering the device, concluding your rental, and prevent additional charges to your credit card. Thank you!</string>
+    <string name="active_orders">Active Orders</string>
+    <string name="active_orders_">Active Order(s)</string>
+    <string name="add_additional_operator">Add additional Operator</string>
+    <string name="add_additional_order">Add Additional Order</string>
+    <string name="add_credit_debit_card">Add Credit/Debit Card</string>
+    <string name="add_customer_e_check">Add Customer\neCheck</string>
+    <string name="add_existing_occupant">Add Existing Occupant</string>
+    <string name="add_new_credit_debit_card">Add New Credit/Debit Card</string>
+    <string name="add_new_e_check">Add New eCheck</string>
+    <string name="add_new_occupant">Add new Occupant</string>
+    <string name="add_occupant_for_operator">Add Occupant for Operator</string>
+    <string name="add_to_reservation">Add to Reservation</string>
+    <string name="alert">Alert</string>
+    <string name="alert_a_new_version_of_the_application_is_available_and_is_required_to_continue">A new version is available for download! Please click Update below to visit the app store and download the latest version.</string>
+    <string name="alert_are_you_sure">Are you sure you want to cancel this Order?</string>
+    <string name="alert_are_you_sure_wants_to_remove_this_occupant">Are you sure wants to remove this Occupant?</string>
+    <string name="alert_are_you_sure_you_want_to_delete_file">Are you sure you want to delete selected file?</string>
+    <string name="alert_are_you_sure_you_want_to_delete_selected_credit_debit_card">Are you sure you want to delete selected credit/debit card?</string>
+    <string name="alert_are_you_sure_you_want_to_delete_selected_e_check_card">Are you sure you want to delete selected eCheck?</string>
+    <string name="alert_are_you_sure_you_want_to_select_bonus_day_profile">Are you sure you want to select Bonus Day profile?</string>
+    <string name="alert_are_you_sure_you_want_to_signout">Are you sure you want to signout?</string>
+    <string name="alert_are_you_sure_you_want_to_unselect_bonus_day_profile">Are you sure you want to unselect Bonus Day profile?</string>
+    <string name="alert_license_expired">%1$s %2$s license expired</string>
+    <string name="alert_payor_license_expired">Payor license expired</string>
+    <string name="alert_update_required">New Version Available</string>
+    <string name="already_have_an_account_login">Already have an account. Login</string>
+    <string name="app_name">MyMobility</string>
+    <string name="arrival">Arrival:</string>
+    <string name="arrival_date">Arrival Date: %1$s</string>
+    <string name="arrival_date_">Arrival Date</string>
+    <string name="arrival_date__">Arrival Date:</string>
+    <string name="arrival_time">Arrival Time: %1$s</string>
+    <string name="arrival_time_">Arrival Time</string>
+    <string name="arrival_time__">Arrival Time:</string>
+    <string name="attachment">Attachment</string>
+    <string name="awesome_file_uploaded_successfully">Awesome! File uploaded successfully.</string>
+    <string name="back">Back</string>
+    <string name="bank_account_type"><![CDATA[<font color=#878787>Bank Account Type</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="bank_name"><![CDATA[<font color=#878787>Bank Name</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="battery_level">Battery Level</string>
+    <string name="billing_address">%1$s, %2$s, %3$s, %4$s, %5$s, %6$s</string>
+    <string name="billing_address_">Billing Address</string>
+    <string name="billing_address__">Billing Address</string>
+    <string name="cancel">Cancel</string>
+    <string name="capture_photo">Capture Photo</string>
+    <string name="card_number_">Card Number:</string>
+    <string name="card_number_acc_number">Card/Ac No:</string>
+    <string name="card_type_echeck">Card Type/eCheck:</string>
+    <string name="cell_home">Cell: %1$s    Home: %2$s</string>
+    <string name="chair_pad_requirement">%1$s      $%2$s</string>
+    <string name="chair_pad_requirement_">Chair Pad Requirement: $%1$s</string>
+    <string name="chair_pad_requirement__">Chair Pad Requirement</string>
+    <string name="change_address">Change Address</string>
+    <string name="check_here_if_delivery_address_is_the_same_as_billing_address">Check here if delivery address is the same as billing address</string>
+    <string name="check_your_connection_and_try_again">Check your connection and try again.</string>
+    <string name="checkout">Checkout</string>
+    <string name="click_here_to_review"><u>Click here to review the training video, rental agreement, and terms &amp; conditions.</u></string>
+    <string name="close_app">CLOSE APP</string>
+    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">00000000000000000000000000000000</string>
+    <string name="complete_action_using">Complete action using</string>
+    <string name="complete_attestation">Completed Attestation:</string>
+    <string name="complimentary_accessory">Complimentary Accessory: %1$s</string>
+    <string name="complimentary_accessory_">Complimentary Accessory:</string>
+    <string name="confirm_account_number"><![CDATA[<font color=#878787>Confirm Account Number</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="confirm_routing_number"><![CDATA[<font color=#878787>Confirm Routing Number</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="confirm_your_rental_device_has_been_returned">Confirm your rental device has been returned</string>
+    <string name="continue_">Continue</string>
+    <string name="create_account">Create Account</string>
+    <string name="create_account_successfully">Create account successfully</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="credit_card_issuer_agreement">Credit Card Issuer Agreement</string>
+    <string name="credit_card_issuer_agreement_text">I HAVE READ AND I ACKNOWLEDGE THAT I FULLY UNDERSTAND ALL OF THE AGREEMENTS, REQUIREMENTS, INSTRUCTIONS, RULES AND TERMS AND CONDITIONS PERTAINING TO THE RENTAL OF THE DEVICE AND I AGREE TO ALL OF THE FOREGOING WITHOUT RESERVATION OR QUALIFICATION.
+            FURTHER, AS THE PAYOR FOR THE SERVICE, I AGREE TO PAY THE ABOVE AMOUNT AND ANY ADDITIONAL CHARGES THAT ARE INCURRED ACCORDING TO THE CREDIT CARD ISSUER AGREEMENT. THE DEVICE TRAINING VIDEO AND THE RENTAL AGREEMENT SET FORTH THE LEGALLY BINDING TERMS AND CONDITIONS FOR YOUR USE OF THE SERVICES.BY COMPLETING THE RENTAL PROCESS, YOU AGREE TO BE LEGALLY BOUND BY THE DEVICE TRAINING VIDEO, RENTAL AGREEMENT, REQUIREMENTS AND TERMS  &amp;  CONDITIONS INCLUDING PAYMENT TERMS, ADDITIONAL CHARGES AND ARBITRATION PROVISION. IF YOU DO NOT AGREE TO THE DEVICE TRAINING VIDEO, RENTAL AGREEMENT, REQUIREMENTS AND TERMS  &amp;  CONDITIONS, INCLUDING PAYMENT TERMS, ADDITIONAL CHARGES AND ARBITRATION PROVISION, DO NOT USE OUR SERVICES AND TERMINATE THE RENTAL PROCESS.</string>
+    <string name="credit_card_number_not_found">Unable to scan Card Number. Please scan again or manually enter card details</string>
+    <string name="credit_debit_card_details">Credit/Debit\nCard Details</string>
+    <string name="credit_debit_card_details_">Credit/Debit Card Details"</string>
+    <string name="customer_e_check_details">eCheck Details"</string>
+    <string name="default_notification_channel_id">10001</string>
+    <string name="default_web_client_id" translatable="false">29296744336-d7j0srtf5tg7s8g8f8nnue1889hj3heh.apps.googleusercontent.com</string>
+    <string name="delete">Delete</string>
+    <string name="delivery_fee">Delivery Fee</string>
+    <string name="departure">Departure:</string>
+    <string name="departure_date">Departure Date: %1$s</string>
+    <string name="departure_date_">Departure Date</string>
+    <string name="departure_date__">Departure Date:</string>
+    <string name="departure_time">Departure Time: %1$s</string>
+    <string name="departure_time_">Departure Time</string>
+    <string name="departure_time__">Departure Time:</string>
+    <string name="description">Description</string>
+    <string name="destination">Destination: %1$s</string>
+    <string name="destination_">Destination:</string>
+    <string name="device_training_video">Device Training Video</string>
+    <string name="eCheck_remove_successfully">eCheck remove successfully</string>
+    <string name="edit_reservation">Edit Reservation</string>
+    <string name="email">Email -</string>
+    <string name="enjoy_your_rental_experience">Enjoy your rental experience!</string>
+    <string name="enter_promo_code_below_and_click_submit">Enter Promo Code below and click Submit</string>
+    <string name="enter_the_cell_phone_number_linked_to_your_account">Enter the cell phone number linked to your account</string>
+    <string name="enter_your_4_digit_code_within">Enter your 4 digit code within </string>
+    <string name="enter_your_equipment_id"><u>Enter Your Equipment Id</u></string>
+    <string name="equipment_id">Equipment ID: %1$s</string>
+    <string name="equipment_type">Equipment Type:</string>
+    <string name="exp_date">Exp. Date:</string>
+    <string name="exp_date_not_found">Unable to scan Expiration Date. Please verify the card is active and scan again or manually enter the Expiration Date</string>
+    <string name="extend_my_order">Extend My Order</string>
+    <string name="extend_my_rental">Extend My Rental</string>
+    <string name="facebook_app_id">220421452556448</string>
+    <string name="fb_login_protocol_scheme">fb220421452556448</string>
+    <string name="full_name">%1$s %2$s</string>
+    <string name="gcm_defaultSenderId" translatable="false">29296744336</string>
+    <string name="google_api_key" translatable="false">AIzaSyDlycvc4iGtQyg4J6EN95o5paiMJlCQkc8</string>
+    <string name="google_app_id" translatable="false">1:29296744336:android:27283db4ee43e022010515</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDlycvc4iGtQyg4J6EN95o5paiMJlCQkc8</string>
+    <string name="google_storage_bucket" translatable="false">mow-cash-app-e4778.appspot.com</string>
+    <string name="hand_controller">Hand Controller: %1$s</string>
+    <string name="hand_controller_">Hand Controller</string>
+    <string name="hand_controller__">Hand Controller:</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="help">Help</string>
+    <string name="help_q">Help?</string>
+    <string name="hint_accessory_type">Accessory Type</string>
+    <string name="hint_agree_terms"><![CDATA[<font color=#000000>I agree to the</font> <font color=#015595>Terms of Use</font>]]></string>
+    <string name="hint_already_have_an_account"><![CDATA[<font color=#000000>Already have an account.</font> <font color=#015595> Login</font>]]></string>
+    <string name="hint_apartment">Apartment, suite, unit etc. (optional)</string>
+    <string name="hint_apartment_suite_unit_building_floor_etc">Apartment, suite, unit, building, floor, etc</string>
+    <string name="hint_apartment_suite_unit_etc">Apartment, suite, unit, etc</string>
+    <string name="hint_app_version"><![CDATA[<font color=#878787>App Version</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_arrival_date"><![CDATA[<font color=#000000>Arrival Date</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_arrival_time"><![CDATA[<font color=#000000>Arrival Time</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_building_name_and_or_building_no"><![CDATA[<font color=#878787>Building Name and/or Building No. / Address</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_card_number"><![CDATA[<font color=#878787>Card Number</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_cell_number"><![CDATA[<font color=#878787>Cell Number</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_cell_phone">Cell Phone</string>
+    <string name="hint_cell_phone_number"><![CDATA[<font color=#878787>Cell Phone Number</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_cell_phone_number_">Cell Phone Number</string>
+    <string name="hint_city"><![CDATA[<font color=#878787>City</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_confirm_password"><![CDATA[<font color=#878787>Confirm Password</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_contact_persons_phone_number_delivery_instructions">Contact person\'s phone number &amp; delivery instructions:</string>
+    <string name="hint_country"><![CDATA[<font color=#878787>Country</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_create_account"><![CDATA[<font color=#000000>I’m a new user,</font> <font color=#015595> Create Account</font>]]></string>
+    <string name="hint_credit_card_type"><![CDATA[<font color=#878787>Credit Card Type</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_cvv"><![CDATA[<font color=#878787>CVV</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_date_format">mm/dd/yyyy</string>
+    <string name="hint_date_of_birth"><![CDATA[<font color=#878787>Date of Birth</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_date_of_birth_">Date of Birth</string>
+    <string name="hint_departure_date"><![CDATA[<font color=#000000>Departure Date</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_departure_time"><![CDATA[<font color=#000000>Departure Time</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_email"><![CDATA[<font color=#878787>Email</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_email_address"><![CDATA[<font color=#878787>Email Address</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_enter_code">Enter Code</string>
+    <string name="hint_enter_email_address">Enter Email Address</string>
+    <string name="hint_enter_equipment_id">Enter Equipment ID</string>
+    <string name="hint_expiration_date"><![CDATA[<font color=#878787>Expiration Date</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_expiration_date_">Expiration Date</string>
+    <string name="hint_expiration_month"><![CDATA[<font color=#878787>Expiration Month</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_expiration_year"><![CDATA[<font color=#878787>Expiration Year</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_first_name"><![CDATA[<font color=#878787>First Name</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_height_ft"><![CDATA[<font color=#878787>Height (ft.)</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_height_in"><![CDATA[<font color=#878787>Height (in.)</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_home_number">Home Number</string>
+    <string name="hint_home_phone_number"><![CDATA[<font color=#878787>Home Phone Number</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_home_phone_number_">Home Phone Number</string>
+    <string name="hint_issue_description"><![CDATA[<font color=#878787>Issue Description</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_last_name"><![CDATA[<font color=#878787>Last Name</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_license_number">License Number</string>
+    <string name="hint_license_valid_id_number"><![CDATA[<font color=#878787>License / Valid ID Number</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_middle_name">Middle Name</string>
+    <string name="hint_model_of_phone"><![CDATA[<font color=#878787>Make/Model of the phone</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_note">Note</string>
+    <string name="hint_operator"><![CDATA[<font color=#000000>Operator</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_other_state"><![CDATA[<font color=#878787>Other State</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_password"><![CDATA[<font color=#878787>Password</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_phone">Phone (XXX)XXX-XXXX</string>
+    <string name="hint_pickup_location"><![CDATA[<font color=#000000>Pickup Location</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_please_enter_a_occupant_name">Please enter a Occupant Name</string>
+    <string name="hint_reported_by_email_address"><![CDATA[<font color=#878787>Reported By (Email Address)</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_scan_front_of_credit_card_now"><![CDATA[<font color=#FFFFFF>Click to Scan Credit/Debit Card</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_scan_front_of_operator_id_now"><![CDATA[<font color=#FFFFFF>Scan Front of Operator\'s ID now</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_scan_front_of_operators_id_now"><![CDATA[<font color=#FFFFFF>Scan Front of Operator\'s ID now</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_scan_front_of_payor_id_now"><![CDATA[<font color=#FFFFFF>Scan Front of Payor\'s ID now</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_select_country"><![CDATA[<font color=#878787>Select Country</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_special_instructions_for_the_entire_reservation">Special instructions for the entire reservation</string>
+    <string name="hint_state"><![CDATA[<font color=#878787>State</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_street_address"><![CDATA[<font color=#878787>Street Address</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_time_format">hh:mm</string>
+    <string name="hint_town_city"><![CDATA[<font color=#878787>Town/City</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_weight_lbs"><![CDATA[<font color=#878787>Weight (in lbs.)</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="hint_zip"><![CDATA[<font color=#878787>Zip</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="html_text_logo"><![CDATA[
+       <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+                <style>
+                    body {
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #ffffff;
+                    }
+                    .siteseal-container {
+                        width: 150px;
+                        height: 80px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="siteseal-container">
+                    <script type="text/javascript" src="https://www.rapidscansecure.com/siteseal/siteseal.js?code=65,F5D663D1526B19F3FC98560BB1E708948660AAF6"></script>
+                </div>
+            </body>
+            </html>
+    ]]></string>
+    <string name="i_agree">I Agree</string>
+    <string name="i_agree_place_order">I Agree, Place Order Now</string>
+    <string name="i_agree_to_the_terms_of_use">I agree to the Terms of use</string>
+    <string name="i_didnt_receive_a_code">I didn’t receive a code"</string>
+    <string name="i_have_elected_to_use_one_or_more_earned_bonus_days">I have elected to use one or more earned Bonus Days; I understand that for each Bonus Day used, 14 Reward Points will be subtracted from my Rewards Balance.</string>
+    <string name="i_m_a_new_user_create_account">I’m a new user. Create Account</string>
+    <string name="if_operator_and_occupant_are_same">If Operator and Occupant are same</string>
+    <string name="if_operator_and_occupant_are_the_same_individual">✓ if Operator and Occupant are the same individual</string>
+    <string name="if_payor_and_operator_are_same">If Payor and Operator are same</string>
+    <string name="includes_tax">(Includes $%1$s Tax)</string>
+    <string name="item_name">%1$d. %2$s</string>
+    <string name="joystick_position">Joystick Position: %1$s</string>
+    <string name="joystick_position_">Joystick Position</string>
+    <string name="joystick_position__">Joystick Position:</string>
+    <string name="log_in_to_continue">Log in to continue!</string>
+    <string name="login">Login</string>
+    <string name="manage_occupant_for_operator">Manage Occupant For Operator</string>
+    <string name="menu_about">•About</string>
+    <string name="menu_active_orders">•Active Orders</string>
+    <string name="menu_contact_customer_service">•Contact Customer Service</string>
+    <string name="menu_deactivate_my_account">•Deactivate My Account</string>
+    <string name="menu_do_not_sell_my_personal_information">•Do Not Sell My Personal Information</string>
+    <string name="menu_faqs">•FAQs</string>
+    <string name="menu_give_feedback">•Give Feedback</string>
+    <string name="menu_information">Information</string>
+    <string name="menu_my_account">My Account</string>
+    <string name="menu_my_profile">•My Profile</string>
+    <string name="menu_notifications">•Notifications</string>
+    <string name="menu_order">Orders</string>
+    <string name="menu_order_history">•Order History</string>
+    <string name="menu_place_an_order">•Select a destination and place order</string>
+    <string name="menu_privacy_and_security_statement">•Privacy and Security Statement</string>
+    <string name="menu_report_a_bug">Report a Bug</string>
+    <string name="menu_retail">Retail</string>
+    <string name="menu_rider_rewards">•Rider Rewards</string>
+    <string name="menu_shop_online">•Shop Online</string>
+    <string name="menu_sign_out">Sign Out</string>
+    <string name="menu_terms_of_use">•Terms of Use</string>
+    <string name="menu_version_number">Version Numbe</string>
+    <string name="min"> min</string>
+    <string name="my_profile">My Profile</string>
+    <string name="new_departure_date">New Departure Date</string>
+    <string name="new_departure_time">New Departure Time</string>
+    <string name="new_occupant">+ New Occupant</string>
+    <string name="new_operator">+ New Operator</string>
+    <string name="next_create_an_operator">Next, Create an Operator</string>
+    <string name="no_video_to_display">No video to display</string>
+    <string name="note_for_this_device_the_operator_may_be_a_different_individual_than_the_occupant">Note : For this Device, the Operator may be a different individual than the Occupant. Please be sure to make the correct selection(s) as per the Operator definitions.</string>
+    <string name="note_this_will_override_your_existing_default_occupant">Note : This will override your existing default Occupant</string>
+    <string name="note_this_will_override_your_existing_default_operator">Note : This will override your existing Default operator</string>
+    <string name="notifications">Notifications</string>
+    <string name="occupant">Occupant</string>
+    <string name="occupant_name">Occupant Name: %1$s</string>
+    <string name="occupant_name_">Occupant Name</string>
+    <string name="occupant_name__">Occupant Name:</string>
+    <string name="off">off</string>
+    <string name="ok">OK</string>
+    <string name="open_gallery">Open Gallery</string>
+    <string name="operator">Operator</string>
+    <string name="operator_details">Operator Details:</string>
+    <string name="operator_info">Operator Info</string>
+    <string name="operator_list">Operator List</string>
+    <string name="operator_name">Operator Name: %1$s</string>
+    <string name="operator_name_">Operator Name</string>
+    <string name="operator_name__">Operator Name:</string>
+    <string name="order_details">Order Details</string>
+    <string name="order_history">Order History</string>
+    <string name="order_notes">Order Notes</string>
+    <string name="order_number">Order Number: %1$s</string>
+    <string name="other">Other</string>
+    <string name="payment_method">Payment Method: %1$s</string>
+    <string name="payor_info">Payor Info</string>
+    <string name="phone_number_verification">Phone Number\nVerification</string>
+    <string name="pickup_location">Pickup Location: %1$s</string>
+    <string name="pickup_location_">Pickup Location</string>
+    <string name="pickup_location__">Pickup Location:</string>
+    <string name="place_order">Place Order</string>
+    <string name="please_check_your_cell_phone_for_a_text_message_which_contains_a_4_digit_verification_code">Please check your cell phone for a text message which contains a 4 digit verification code.</string>
+    <string name="please_scan_id_verify_all_required_fields_below">Please scan ID + verify all required fields below</string>
+    <string name="please_verify_all_fields_below">Please verify all fields below</string>
+    <string name="preferred_wheelchair_size">Preferred Wheelchair Size</string>
+    <string name="price">$ %1$s /</string>
+    <string name="price_">Price: $%1$s</string>
+    <string name="price__">Price:</string>
+    <string name="price_adjustment_bonus_days">Price Adjustment: Bonus Day(s)</string>
+    <string name="proceed_to_checkout">Proceed to Checkout</string>
+    <string name="processing_fee">Processing Fee</string>
+    <string name="product_description">Product Description</string>
+    <string name="product_details">Product Details</string>
+    <string name="product_list">Product List</string>
+    <string name="project_id" translatable="false">mow-cash-app-e4778</string>
+    <string name="promo">Promo</string>
+    <string name="promo_code_is_accepted">Promo code is accepted.</string>
+    <string name="promo_inverse_value_off">-$%1$s off</string>
+    <string name="promo_percentage_off">$%1$s% off</string>
+    <string name="promo_value_off">$%1$s off</string>
+    <string name="rates_do_not_include_tax">Rates do not include tax</string>
+    <string name="read_credit_card_issuer_agreement">Read Credit Card Issuer Agreement</string>
+    <string name="remove_card_successfully">Remove card successfully</string>
+    <string name="rental_agreement">Rental Agreement</string>
+    <string name="rental_period">Rental Period: %1$s</string>
+    <string name="rental_period_">Rental Period</string>
+    <string name="rental_period__">Rental Period:</string>
+    <string name="rental_rates">Rental Rates</string>
+    <string name="reported_by">Reported By : </string>
+    <string name="resend_attestation">Resend Attestation:</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="reservation_details">Reservation Details</string>
+    <string name="reservation_totals">Reservation Totals</string>
+    <string name="reserved_items">Reserved Items</string>
+    <string name="retrieve_cell_phone_number">Retrieve cell phone number</string>
+    <string name="retrieve_n_cell_phone_number">Retrieve\nCell Phone Number</string>
+    <string name="return_my_rental">Return My Rental</string>
+    <string name="return_to_login">Return to Login</string>
+    <string name="return_to_main_menu">Return to Main Menu</string>
+    <string name="return_to_reservation">Return to Reservation</string>
+    <string name="return_to_view_order">Return to View Order</string>
+    <string name="rider_reward_points_text">Rider Reward Points are earned at a rate of one (1) point for each paid day of scooter and power wheelchair rentals only. Once fourteen (14) Rider Reward Points are acquired, a Bonus Day is earned and is available for use on a subsequent trip. Fourteen (14) Rider Reward Points are equal to one (1) Bonus Day.\n\nCurrent Rider Rewards Balance</string>
+    <string name="rider_rewards">Rider Rewards : %1$s (%2$d Day)</string>
+    <string name="rider_rewards_points">Rider Rewards Points</string>
+    <string name="rider_rewards_points_earned">Rider Rewards Points Earned</string>
+    <string name="rider_rewards_policy">Rider Rewards Policy</string>
+    <string name="routing_number"><![CDATA[<font color=#878787>Routing Number</font> <font color=#ED1C24>*</font>]]></string>
+    <string name="save">Save</string>
+    <string name="save_add_an_additional_order">Save &amp; Add an Additional Order</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="save_payment_method">Save Payment Method</string>
+    <string name="save_this_order_continue">Save this Order &amp; Continue</string>
+    <string name="search">Search</string>
+    <string name="search_occupant">Search Occupant</string>
+    <string name="select">Select</string>
+    <string name="select_a_destination">Select a Destination</string>
+    <string name="select_a_destination_and_place_order">Select a destination and place an order</string>
+    <string name="select_accessory_type">Select Accessory Type</string>
+    <string name="select_bank_account_type">Select Bank Account Type</string>
+    <string name="select_card">Select Card</string>
+    <string name="select_country">Select country</string>
+    <string name="select_device_type">Select Device Type</string>
+    <string name="select_existing_card_or_add_a_new_card">Select existing card or add a new card.</string>
+    <string name="select_existing_e_check_or_add_new_e_check">Select existing eCheck or add new eCheck</string>
+    <string name="select_height_ft">Select Height (ft.)</string>
+    <string name="select_height_in">Select Height (in.)</string>
+    <string name="select_month">Expiry Month</string>
+    <string name="select_occupant">Select Occupant</string>
+    <string name="select_operator">Select Operator</string>
+    <string name="select_state">Select state</string>
+    <string name="select_year">Expiry Year</string>
+    <string name="shop_online">Shop Online</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_to_get_started">Sign up to get started!</string>
+    <string name="something_went_wrong_please_try_again">Something went wrong. Please try again.</string>
+    <string name="something_wrong">Something Wrong</string>
+    <string name="sort_by">Sort by</string>
+    <string name="sort_order">Sort order</string>
+    <string name="sub_total">$%1$s (excl. tax)</string>
+    <string name="submit">Submit</string>
+    <string name="submit_photo">Submit Photo</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="terms_and_conditions">Terms &amp; Conditions</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="thank_you">Thank you</string>
+    <string name="the_equipment_id_number_for_standard"><![CDATA[<b>Scooters:</b> The Equipment ID number for Standard, Bariatric, and Portable travel scooters are indicated by a blue square with a three-digit number located below the seat or on the inside of the steering column. On certain standard scooters, the ID may also be located on each side of the scooter on the battery box located underneath the seat and also under the headlight on the front of the scooter.<br><br>
+<b>Power wheelchair:</b> The Equipment ID number is indicated by a blue square with a three-digit number located behind the chair and/or below the seat.<br><br>
+<b>Wheelchairs:</b> The Equipment ID number on the wheelchair is printed on the lower back of the wheelchair and is the last three-digit number on the lower right of the backrest.<br><br>
+<b>Transport Chair, Rollator, Knee walker:</b> The Equipment ID number is located on the frame by a white label with a three-digit number.<br><br>
+<b>Beach Wheelchair:</b> The Equipment ID number for the beach wheelchair is indicated by a blue square with a three-digit number located on the back frame.<br><br>
+<b>Single and Double Stroller:</b> The Equipment ID number is indicated by a blue square with a three-digit number located on the front foot fender.]]></string>
+    <string name="time_remaining">Time Remaining</string>
+    <string name="total">$%1$s</string>
+    <string name="total_">Total: $%1$s</string>
+    <string name="total__">Total: $%1$s (excl. tax)</string>
+    <string name="total___">Total</string>
+    <string name="update">Update</string>
+    <string name="update_reservation">Update Reservation</string>
+    <string name="update_successfully">Update successfully</string>
+    <string name="validation_address_is_required">Address is required.</string>
+    <string name="validation_address_line1_is_required">Address Line1 is required.</string>
+    <string name="validation_cell_number_is_required">Cell Phone Number is required.</string>
+    <string name="validation_city_is_required">City is required.</string>
+    <string name="validation_confirm_account_number_doesnt_match">Confirm account number doesn\'t matched</string>
+    <string name="validation_confirm_password_is_required">Confirm password is required.</string>
+    <string name="validation_confirm_routing_number_doesnt_match">Confirm routing number doesn\'t matched</string>
+    <string name="validation_country_is_required">Country is required.</string>
+    <string name="validation_date_of_birth_is_required">Date Of Birth is required.</string>
+    <string name="validation_email_is_required">Email is required.</string>
+    <string name="validation_expiration_date_is_required">Expiration Date is required.</string>
+    <string name="validation_first_name_is_required">First Name is required.</string>
+    <string name="validation_invalid_email_address">Invalid email address.</string>
+    <string name="validation_last_name_is_required">Last Name is required.</string>
+    <string name="validation_license_number_is_required">License Number is required.</string>
+    <string name="validation_operator_first_name_is_required">Operator First Name is required.</string>
+    <string name="validation_operator_last_name_is_required">Operator Last Name is required.</string>
+    <string name="validation_other_state_is_required">Other state is required.</string>
+    <string name="validation_password_and_confirm_password_does_not_match">Password and confirm password does not match.</string>
+    <string name="validation_password_is_required">Password is required.</string>
+    <string name="validation_phone_number_is_required">Home Phone Number is required.</string>
+    <string name="validation_please_accept_terms_conditions">Please accept terms &amp; conditions</string>
+    <string name="validation_please_accept_terms_of_use">Please accept Terms of Use</string>
+    <string name="validation_please_can_a_operator_valid_id">Please scan a Operator %1$s %2$s Valid ID</string>
+    <string name="validation_please_complete_operator_detail_first_to_create_new_occupant">Please complete Operator detail first to create New Occupant.</string>
+    <string name="validation_please_complete_profile_information">Please complete profile information</string>
+    <string name="validation_please_enter_account_number">Please enter account number</string>
+    <string name="validation_please_enter_bank_name">Please enter bank name</string>
+    <string name="validation_please_enter_card_number">Please enter card number</string>
+    <string name="validation_please_enter_confirm_account_number">Please enter Confirm Account Number</string>
+    <string name="validation_please_enter_confirm_routing_number">Please enter Confirm Routing Number</string>
+    <string name="validation_please_enter_cvv">Please enter CVV</string>
+    <string name="validation_please_enter_description">Please enter description</string>
+    <string name="validation_please_enter_deviceModel">Please enter deviceModel</string>
+    <string name="validation_please_enter_email">Please enter email</string>
+    <string name="validation_please_enter_email_address">Please enter email address</string>
+    <string name="validation_please_enter_first_name">Please enter first name</string>
+    <string name="validation_please_enter_last_name">Please enter last name</string>
+    <string name="validation_please_enter_mobile_cell_phone">Please enter Mobile/Cell phone</string>
+    <string name="validation_please_enter_phone_number">Please enter phone number</string>
+    <string name="validation_please_enter_routing_number">Please enter routing number</string>
+    <string name="validation_please_enter_street_address">Please enter street address</string>
+    <string name="validation_please_enter_town_city">Please enter Town/City</string>
+    <string name="validation_please_enter_valid_email">Please enter valid email</string>
+    <string name="validation_please_enter_valid_phone_number">Please enter valid Phone number</string>
+    <string name="validation_please_enter_zip_code">Please enter zip code</string>
+    <string name="validation_please_scan_a_valid_payor_id">Please scan a Valid Payor ID</string>
+    <string name="validation_please_select_a_destination">Please select a destination</string>
+    <string name="validation_please_select_bank_account_type">Please select bank account type</string>
+    <string name="validation_please_select_card_type">Please select card type</string>
+    <string name="validation_please_select_expiry_month">Please select expiry month</string>
+    <string name="validation_please_select_expiry_year">Please select expiry year</string>
+    <string name="validation_please_select_height_ft">Please select Height (ft.).</string>
+    <string name="validation_please_select_height_in">Please select Height (in.).</string>
+    <string name="validation_please_select_state">Please select state.</string>
+    <string name="validation_please_select_your_e_check_bank">Please select your eCheck.</string>
+    <string name="validation_please_select_your_payment_card">Please select your payment card.</string>
+    <string name="validation_request_you_to_scan_front_of_id">Request you to scan front of ID</string>
+    <string name="validation_return_rental_device_link_is_not_available_for_this_order">Return Rental Device link is not available for this order</string>
+    <string name="validation_return_time_must_be_greater_than_pick_up_time">Return time must be greater than pick up time.</string>
+    <string name="validation_scan_valid_id_required">Scan valid ID required</string>
+    <string name="validation_select_time_between">Select time between %1$s:%2$s - %3$s:%4$s</string>
+    <string name="validation_town_city_is_required">Town/City is required.</string>
+    <string name="validation_weight_is_required">Weight is required.</string>
+    <string name="validation_zip_code_is_required">Zip code is required.</string>
+    <string name="validation_zip_is_required">Zip is required.</string>
+    <string name="view_all_active_orders">View All Active Orders</string>
+    <string name="welcome">Welcome</string>
+    <string name="welcome_to_mymobility_app">Welcome to MyMobility App</string>
+    <string name="wheelchair_size">Wheelchair Size: %1$s</string>
+    <string name="wheelchair_size_">Wheelchair Size:</string>
+    <string name="yes">Yes</string>
+    <string name="you_have_no_current_active_orders">You have no current Active Orders</string>
+    <string name="you_have_no_current_notifications">You have no current notifications</string>
+    <string name="your_order_has_been_received">Your order has been received.</string>
+    <style name="AppDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        
+
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/dark_blue</item>
+        <item name="colorPrimaryDark">@color/dark_blue</item>
+        <item name="colorAccent">@color/dark_blue</item>
+        <item name="android:windowBackground">@color/dark_blue</item>
+        <item name="android:navigationBarColor">@color/dark_blue</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="BarlowBold" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/barlow_bold</item>
+    </style>
+    <style name="BarlowExtraBold" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/barlow_extrabold</item>
+    </style>
+    <style name="BarlowLight" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/barlow_light</item>
+    </style>
+    <style name="BarlowMedium" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fontFamily">@font/barlow_medium</item>
+        <item name="android:textColorHint">@color/colorGray</item>
+        <item name="hintTextAppearance">@style/CustomHintText</item>
+    </style>
+    <style name="BarlowRegular" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/barlow_regular</item>
+    </style>
+    <style name="BarlowSemiBold" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/barlow_semibold</item>
+    </style>
+    <style name="Calendertheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/dark_blue</item>
+        <item name="colorPrimaryDark">@color/dark_blue</item>
+        <item name="colorAccent">@color/dark_blue</item>
+        <item name="android:navigationBarColor">@color/dark_blue</item>
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:timePickerStyle">@style/MyTimePickerDark</item>
+    </style>
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/rounded_corner</item>
+    </style>
+    <style name="CustomHintText" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="FullWidthSnackbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:paddingLeft">5dp</item> 
+    </style>
+    <style name="IncidentCommentDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="android:windowFullscreen">true</item>
+        
+
+    </style>
+    <style name="LoginTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/dark_blue</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+        <item name="colorAccent">@color/dark_blue</item>
+        <item name="android:navigationBarColor">@color/colorBlack</item>
+        <item name="android:windowBackground">@drawable/bg_login_screen</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="MOWTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+
+        <item name="colorPrimary">@color/dark_blue</item>
+        <item name="colorPrimaryDark">@color/dark_blue</item>
+        <item name="colorAccent">@color/dark_blue</item>
+        <item name="android:navigationBarColor">@color/dark_blue</item>
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:timePickerStyle">@style/MyTimePickerDark</item>
+        <item name="textInputStyle">@style/BarlowMedium</item>
+        <item name="snackbarStyle">@style/FullWidthSnackbar</item>
+
+    </style>
+    <style name="MyTimePickerDark" parent="android:Widget.Material.TimePicker">
+        <item name="android:timePickerMode">spinner</item>
+    </style>
+    <style name="ProgressDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+    </style>
+    <style name="RobotoLightN" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_light</item>
+    </style>
+    <style name="RobotoMediumN" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+    <style name="RobotoRegularN" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+    <style name="SplashNoActionBarTheme" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:navigationBarColor">@color/white</item>
+
+    </style>
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr format="reference" name="metaButtonBarStyle"/>
+        <attr format="reference" name="metaButtonBarButtonStyle"/>
+    </declare-styleable>
+</resources>

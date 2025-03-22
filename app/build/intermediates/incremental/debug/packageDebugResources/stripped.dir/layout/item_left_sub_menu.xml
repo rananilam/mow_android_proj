@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+                                                                   
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewSubMenu"
+        style="@style/RobotoLightN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_marginStart="24dp"
+        android:textColor="@color/textColorBlack"
+        android:textSize="@dimen/txt_size_40"  android:tag="layout/item_left_sub_menu_0" xmlns:android="http://schemas.android.com/apk/res/android"/>
+
+         

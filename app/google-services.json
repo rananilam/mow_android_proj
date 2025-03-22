@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "29296744336",
+    "project_id": "mow-cash-app-e4778",
+    "storage_bucket": "mow-cash-app-e4778.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29296744336:android:27283db4ee43e022010515",
+        "android_client_info": {
+          "package_name": "com.mow.cash.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29296744336-d7j0srtf5tg7s8g8f8nnue1889hj3heh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlycvc4iGtQyg4J6EN95o5paiMJlCQkc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29296744336-d7j0srtf5tg7s8g8f8nnue1889hj3heh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "29296744336-sbeceferanjkqo76hv0iurc7i0b42me4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mow.cash.ios"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

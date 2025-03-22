@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="txt_size_160">48sp</dimen>
+    <dimen name="txt_size_140">42sp</dimen>
+    <dimen name="txt_size_100">30sp</dimen>
+    <dimen name="txt_size_80">24sp</dimen>
+    <dimen name="txt_size_90">27sp</dimen>
+    <dimen name="txt_size_70">24sp</dimen>
+    <dimen name="txt_size_75">25sp</dimen>
+    <dimen name="txt_size_60">18sp</dimen>
+    <dimen name="txt_size_55">16.5sp</dimen>
+    <dimen name="txt_size_50">15sp</dimen>
+    <dimen name="txt_size_45">13.5sp</dimen>
+    <dimen name="txt_size_40">12sp</dimen>
+    <dimen name="txt_size_35">11.5sp</dimen>
+    <dimen name="txt_size_30">11sp</dimen>
+    <dimen name="txt_size_25">10sp</dimen>
+    <dimen name="txt_size_20">8sp</dimen>
+    <dimen name="txt_size_15">6sp</dimen>
+    <dimen name="txt_size_10">4sp</dimen>
+</resources>
